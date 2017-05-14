@@ -3,5 +3,87 @@
 }
 
 body {
+
   font-family: 'Open Sans', sans-serif;
+}
+.halfs {
+  display: inline-block;
+  height: 100%;
+  max-width: 50%;
+  padding: 10px 20px;
+}
+#left-half {
+  background-color: #455A64;
+  margin-right: 0px;
+}
+#right-half {
+  background-color: #CFD8DC;
+  margin-left: 0px;
+}
+#left-side{
+  padding: 100px 30px;
+}
+h1 {
+  color: #FFFFFF;
+  font-size: 60px;
+  font-weight: 800;
+  max-width: 98%;
+  width: 500px;
+}
+#logo {
+  height: 40px;
+  width: 100px;
+}
+input {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 35px;
+  max-width: 98%;
+  width: 450px;
+}
+#enter {
+  background-color: #FFC107;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 15px;
+  height: 30px;
+  margin-bottom: 25px;
+  max-width: 98%;
+  width: 450px;
+}
+#enter:hover {
+  background-color: #FFD773;
+}
+.bookmark {
+  background-color: #FFFFFF;
+  border: 2px solid #607D8B;
+  margin-bottom: 25px;
+  max-width: 98%;
+  padding: 10px 20px;
+  width: 450px;
+}
+.titles {
+  color: #455A64;
+  font-size: 20px;
+}
+.urls {
+  color: #455A64;
+  font-weight: 400;
+}
+.urls:hover {
+  font-weight: 800;
+  text-decoration: underline #FFC107;
+}
+.right-buttons {
+  background-color: #FFFFFF;
+  color: #455A64;
+  border: none;
+}
+.right-buttons:hover {
+  font-weight: 800;
+  text-decoration: underline #FFC107;
+}
+.delete {
+  float: right;
 }
