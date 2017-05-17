@@ -5,17 +5,16 @@
 body {
   background-color: #CFD8DC;
   font-family: 'Open Sans', sans-serif;
+  margin: 0px;
   width: 100%;
 }
 .halfs {
-  background-color: #CFD8DC;
   display: inline-block;
   height: 100%;
-  max-width: 45%;
+  max-width: 50%;
   padding: 100px 30px;
 }
 #left-half {
-  align-items: flex-start;
   background-color: #455A64;
   height: 100%;
 }
@@ -42,13 +41,13 @@ input {
   border: none;
   color: #FFFFFF;
   font-weight: 800;
-  font-size: 15px;
-  height: 30px;
+  font-size: 17px;
+  height: 35px;
   margin-bottom: 25px;
   max-width: 98%;
   width: 450px;
 }
-#enter:hover {
+.enter:hover {
   background-color: #FFD773;
 }
 .bookmark {
@@ -56,7 +55,7 @@ input {
   border: 2px solid #607D8B;
   margin-bottom: 25px;
   max-width: 98%;
-  padding: 10px 20px;
+  padding: 5px 20px;
   width: 450px;
 }
 .titles {
@@ -67,7 +66,7 @@ input {
   color: #455A64;
   font-weight: 400;
 }
-.urls:hover {
+.underlined:hover {
   font-weight: 800;
   text-decoration: underline #FFC107;
 }
@@ -76,13 +75,32 @@ input {
   color: #455A64;
   border: none;
 }
-.right-buttons:hover {
-  font-weight: 800;
-  text-decoration: underline #FFC107;
-}
-.read {
+.read-enabled{
   color: #F05A28
 }
-.delete {
+#delete {
   float: right;
+}
+
+@media (max-width: 1024px) {
+  .halfs {
+    padding: 10px;
+    max-width: 100%;
+  }
+  #left-half {
+    display: block;
+    max-height: 300px;
+    max-width: 100%;
+  }
+  #right-half {
+    display: block;
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+
 }
