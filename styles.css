@@ -5,6 +5,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   height: 600px;
+  margin: 0px;
 }
 
 h1 {
@@ -15,8 +16,8 @@ h1 {
 
 span {
   content: url(assets/linked-list-logo.svg);
-  width: 60px;
-  height: 80px;
+  height: 60px;
+  width: 80px;
   padding-top: 30px;
 }
 
