@@ -5,54 +5,86 @@
 body {
   background-color: #CFD8DC;
   font-family: 'Open Sans', sans-serif;
+  height: 100%;
   margin: 0px;
   width: 100%;
 }
+.page-conatiner {
+  display: flex;
+}
 .halfs {
-  display: inline-block;
   height: 100%;
   max-width: 50%;
   padding: 100px 30px;
 }
 #left-half {
   background-color: #455A64;
-  height: 100%;
 }
 h1 {
   color: #FFFFFF;
-  font-size: 65px;
+  font-size: 4em;
   font-weight: 800;
-  max-width: 98%;
-  width: 500px;
+  /*margin-right: auto;
+  margin-left: auto;*/
+  max-width: 100%;
+  text-align: center;
+  /*width: 500px;*/
 }
 #logo {
   height: 40px;
   width: 100px;
 }
-input {
+#inputs{
+  padding: 0px auto;
+}
+.input-field {
   display: block;
   font-size: 25px;
-  margin-bottom: 35px;
+  margin: 0px auto 35px auto;
   max-width: 98%;
   width: 450px;
 }
-.enter {
+.error-message {
+  background-color: #FFFFFF;
+  border-radius: 180px;
+  color: red;
+  max-width: 450px;
+  text-align: center;
+}
+.buttons{
   background-color: #FFC107;
   border: none;
   color: #FFFFFF;
+  display: block;
   font-weight: 800;
   font-size: 17px;
   height: 35px;
-  margin-bottom: 25px;
+  margin:0px auto 25px auto;
   max-width: 98%;
   width: 450px;
 }
-.enter:hover {
+.buttons:hover {
   background-color: #FFD773;
+}
+.counters {
+  background-color: #FFFFFF;
+  border-radius: 180px;
+  display: block;
+  color: #455A64;
+  margin: 0px auto 25px auto;
+  text-align: center;
+  width: 250px;
+}
+#card-container{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
 }
 .bookmark {
   background-color: #FFFFFF;
   border: 2px solid #607D8B;
+  display: inline-block;
   margin-bottom: 25px;
   max-width: 98%;
   padding: 5px 20px;
@@ -82,24 +114,49 @@ input {
   float: right;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1055px) {
   .halfs {
     padding: 10px;
     max-width: 100%;
   }
-  #left-half {
+  .page-conatiner {
     display: block;
-    max-height: 300px;
+  }
+  #left-half {
+    max-height: 450px;
     max-width: 100%;
+    text-align: center;
   }
   #right-half {
-    display: block;
+    margin: auto;
     max-width: 100%;
   }
   h1 {
-    font-size: 25px;
+    display: block;
+    font-size: 33px;
+    margin: 0px auto 25px auto;
     text-align: center;
+
   }
+  #logo {
+    height: 26px;
+    width: 60px;
+  }
+  .input-field {
+    display: block;
+    margin: 0px auto 25px auto;
+  }
+  .error-message {
+    margin: 10px auto 20px auto;
+    max-width: 98%;
+    text-align: center;
+    width: 450px;
+  }
+  .bookmark {
+  display: block;
+  margin: 10px auto 10px auto;
+  width: 98%;
+}
 }
 @media (min-width: 1200px) {
 
